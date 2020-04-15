@@ -49,14 +49,14 @@ class _WebPageState extends State<WebPage> {
                         color: Color(0xffee6200),
                         textColor: Colors.white,
                         padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
-                        child: Text('สถานีโทรทัศน์ระบบดิจิตอล',
-                          style: TextStyle(fontFamily: fontFam, fontSize: 20, fontWeight: FontWeight.bold,),),
+                        child: Text('สถานีโทรทัศน์ระบบดิจิทัลเพื่อการศึกษา',
+                          style: TextStyle(fontFamily: fontFam, fontSize: 18, fontWeight: FontWeight.bold,),),
                         onPressed: () {
                           Navigator.of(context).push(
                               MaterialPageRoute<Null>(builder: (BuildContext context) {
                                 return new WebViewScreen(
                                   urlString: urlKdtv,
-                                  titleString: 'สถานีโทรทัศน์ระบบดิจิตอล',
+                                  titleString: 'สถานีโทรทัศน์ระบบดิจิทัลเพื่อการศึกษา',
                                 );
                               }));
                         },

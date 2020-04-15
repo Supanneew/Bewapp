@@ -1,5 +1,4 @@
 import 'dart:convert';
-
 import 'package:dio/dio.dart';
 import 'package:enetb/models/teacher_model.dart';
 import 'package:enetb/screens/detail_teacher.dart';
@@ -70,7 +69,7 @@ class _PerAState extends State<PerA> {
             color: Colors.deepOrange,
           ),
           Padding(
-            padding: const EdgeInsets.all(5.0),
+            padding: const EdgeInsets.all(20.0),
             child: SingleChildScrollView(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -80,7 +79,7 @@ class _PerAState extends State<PerA> {
                       moveToDetail(0);
                     },
                     child: Image.asset(
-                      'assets/images/t1.png',
+                      'assets/images/a1.png',
                       width: imageWidth,
                     ),
                   ),
@@ -89,7 +88,7 @@ class _PerAState extends State<PerA> {
                       moveToDetail(1);
                     },
                     child: Image.asset(
-                      'assets/images/t2.png',
+                      'assets/images/a2.png',
                       width: imageWidth,
                     ),
                   ),
@@ -98,7 +97,7 @@ class _PerAState extends State<PerA> {
                       moveToDetail(2);
                     },
                     child: Image.asset(
-                      'assets/images/t3.png',
+                      'assets/images/a3.png',
                       width: imageWidth,
                     ),
                   ),
@@ -107,7 +106,7 @@ class _PerAState extends State<PerA> {
                       moveToDetail(3);
                     },
                     child: Image.asset(
-                      'assets/images/t4.png',
+                      'assets/images/a4.png',
                       width: imageWidth,
                     ),
                   ),
@@ -116,7 +115,7 @@ class _PerAState extends State<PerA> {
                       moveToDetail(4);
                     },
                     child: Image.asset(
-                      'assets/images/t5.png',
+                      'assets/images/a5.png',
                       width: imageWidth,
                     ),
                   ),

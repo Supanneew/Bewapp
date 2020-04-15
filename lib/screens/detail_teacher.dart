@@ -11,6 +11,8 @@ class DetailTeacher extends StatefulWidget {
 }
 
 class _DetailTeacherState extends State<DetailTeacher> {
+
+
 //  Field
   TeacherModel model;
 
@@ -22,10 +24,16 @@ class _DetailTeacherState extends State<DetailTeacher> {
     model = widget.teacherModel;
   }
 
+  Widget titleAppBar() {
+    return Text(model.name);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: titleAppBar(),
+      ),
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[

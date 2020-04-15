@@ -21,19 +21,21 @@ class _DetailNewsState extends State<DetailNews> {
   }
 
   Widget showName() {
-    Text(model.name,
-    style: TextStyle(
-    fontSize:20.0,
-    fontWeight: FontWeight.bold,
-    ),
+    Text(
+      model.name,
+      style: TextStyle(
+        fontSize: 20.0,
+        fontWeight: FontWeight.bold,
+        color: Colors.deepOrange,
+      ),
     );
   }
 
-  Widget showImage(){
+  Widget showImage() {
     NetworkImage(model.pathImage);
   }
 
-  Widget showDetail(){
+  Widget showDetail() {
     Text(model.message);
   }
 
@@ -49,7 +51,6 @@ class _DetailNewsState extends State<DetailNews> {
           ],
         ),
       ),
-
     );
   }
 }

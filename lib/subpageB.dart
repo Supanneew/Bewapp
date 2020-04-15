@@ -81,19 +81,21 @@ class _SubpageBState extends State<SubpageB> {
       body: Container(
         decoration: BoxDecoration(color: Colors.white),
         child: Center(
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: <Widget>[
-              showImage(),
-              SizedBox(
-                height: 14.0,
-              ),
-              showName(),
-              SizedBox(
-                height: 14.0,
-              ),
-              showDetail(),
-            ],
+          child: SingleChildScrollView(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: <Widget>[
+                showImage(),
+                SizedBox(
+                  height: 14.0,
+                ),
+                showName(),
+                SizedBox(
+                  height: 14.0,
+                ),
+                showDetail(),
+              ],
+            ),
           ),
         ),
       ),

@@ -18,7 +18,7 @@ class _RoompageBState extends State<RoompageB> {
   }
 
   Widget showName() {
-    return Text('ชื่อห้อง : สถานีโทรทัศน์ระบบดิจิตอลเพื่อการศึกษา',
+    return Text('ชื่อห้อง : สถานีโทรทัศน์ระบบดิจิทัลเพื่อการศึกษา',
       style: TextStyle(fontFamily: fontFam,fontWeight: FontWeight.bold,
           fontSize: 20,color: Colors.deepOrange ),
     );
@@ -46,7 +46,7 @@ class _RoompageBState extends State<RoompageB> {
       appBar: AppBar(
         elevation: 0,
         backgroundColor: Colors.deepOrange,
-        title: Text('สถานีโทรทัศน์ระบบดิจิตอลเพื่อการศึกษา',
+        title: Text('สถานีโทรทัศน์ระบบดิจิทัลเพื่อการศึกษา',
           style: TextStyle(fontFamily: fontFam,fontWeight: FontWeight.bold,
             fontSize: 25,),),centerTitle: true,
       ),

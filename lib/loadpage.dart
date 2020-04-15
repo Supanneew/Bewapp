@@ -1,8 +1,11 @@
+import 'package:enetb/loadA.dart';
+import 'package:enetb/loadB.dart';
 import 'package:flutter/material.dart';
 
 const PrimaryColor = const Color(0xFFFF6B00);
 String fontFam = 'Quark';
-double imageWidth = 420;
+double imageWidth1 = 330;
+double imageWidth2 = 300;
 
 class LoadPage extends StatefulWidget {
   @override
@@ -31,15 +34,20 @@ class _LoadPageState extends State<LoadPage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 FlatButton(onPressed: () {
-
+                  MaterialPageRoute route = MaterialPageRoute(builder: (BuildContext context){return LoadA();});
+                  Navigator.of(context).push(route);
                 }
-                  , child: Image.asset('assets/images/lo1.png',width: imageWidth,),),
+                  , child: Image.asset('assets/images/b-01.png',width: imageWidth1,),),
 
+                SizedBox(
+                  height: 15.0,
+                ),
 
                 FlatButton(onPressed: () {
-
+                  MaterialPageRoute route = MaterialPageRoute(builder: (BuildContext context){return LoadB();});
+                  Navigator.of(context).push(route);
                 }
-                  , child: Image.asset('assets/images/lo2.png',width: imageWidth,),),
+                  , child: Image.asset('assets/images/np-01.png',width: imageWidth2,),),
               ],
             ),
           )

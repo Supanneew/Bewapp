@@ -1,4 +1,5 @@
 import 'package:enetb/HomeScreen.dart';
+import 'package:enetb/mainpage.dart';
 import 'package:flutter/material.dart';
 import 'dart:io';
 import 'dart:convert';
@@ -390,7 +391,7 @@ class AlerSuccess extends StatelessWidget {
                       onPressed: () => {
                         Navigator.of(context)
                             .push(MaterialPageRoute<Null>(builder: (BuildContext context) {
-                          return new HomeScreen(userId: null, type: null);
+                          return new MainPage(userId: null, type: null);
                         }))
                       },
                     ),

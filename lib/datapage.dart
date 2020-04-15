@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 const PrimaryColor = const Color(0xFFFF6B00);
 String fontFam = 'Quark';
-double imageWidth = 115;
+
 
 class DataPage extends StatefulWidget {
   @override
@@ -13,39 +13,11 @@ class _DataPageState extends State<DataPage> {
 
   Widget showImageA() {
     return Container(
-      width: 300.0,
-      child: Image.asset('assets/images/data1.jpg'),
+      width: 350.0,
+      child: Image.asset('assets/images/datanew.png'),
     );
   }
 
-  Widget showImageB() {
-    return Container(
-      width: 300.0,
-      child: Image.asset('assets/images/data2.png'),
-    );
-  }
-
-  Widget showImageC() {
-    return Container(
-      width: 300.0,
-      child: Image.asset('assets/images/data3.png'),
-    );
-  }
-
-  Widget showImageD() {
-    return Container(
-      width: 300.0,
-      child: Image.asset('assets/images/data4.png'),
-    );
-  }
-
-
-  Widget showImageE() {
-    return Container(
-      width: 300.0,
-      child: Image.asset('assets/images/data5.png'),
-    );
-  }
 
 
 
@@ -63,20 +35,16 @@ class _DataPageState extends State<DataPage> {
       body: Container(
         decoration: BoxDecoration(color: Colors.white),
         child: Center(
-          child: SingleChildScrollView(
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: <Widget>[
-                showImageA(),
+          child: Padding(
+            padding: const EdgeInsets.all(10.0),
+            child: SingleChildScrollView(
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: <Widget>[
+                  showImageA(),
 
-                showImageB(),
-
-                showImageC(),
-
-                showImageD(),
-
-                showImageE(),
-              ],
+                ],
+              ),
             ),
           ),
         ),

@@ -37,7 +37,7 @@ class _SubPageState extends State<SubPage> {
                   MaterialPageRoute route = MaterialPageRoute(builder: (BuildContext context){return SubpageA();});
                   Navigator.of(context).push(route);
                 }
-                , child: Image.asset('assets/images/sub1.png',width: imageWidth,),),
+                , child: Image.asset('assets/images/sub-01.png',width: imageWidth,),),
 
                 SizedBox(
                   height: 5.0,
@@ -46,7 +46,7 @@ class _SubPageState extends State<SubPage> {
                   MaterialPageRoute route = MaterialPageRoute(builder: (BuildContext context){return SubpageB();});
                   Navigator.of(context).push(route);
                 }
-                  , child: Image.asset('assets/images/sub2.png',width: imageWidth,),),
+                  , child: Image.asset('assets/images/sub-02.png',width: imageWidth,),),
               ],
             ),
           )

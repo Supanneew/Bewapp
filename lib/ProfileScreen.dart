@@ -219,8 +219,8 @@ class ProfileScreenState extends State<ProfileStudentScreen> {
                       child:
                         Image.network(
                           data['image'],
-                          width: 200,
-                          height: 300,
+                          width: 120,
+                          height: 170,
                         )
                     ),
 
